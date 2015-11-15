@@ -1,4 +1,4 @@
-package java基础;
+package java核心技术;
 
 import java.io.File;
 import java.io.FileInputStream;

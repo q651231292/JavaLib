@@ -1,4 +1,4 @@
-package java基础;
+package java核心技术;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
