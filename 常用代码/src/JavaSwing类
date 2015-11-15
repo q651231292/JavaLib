@@ -1,11 +1,11 @@
 嵌入式程序一般用AWT
 PC程序一般用Swing
 
-static void initUI(JFrame f,int w,int h){
-	f.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-	f.setSize(w,h);
-	f.setLocationRelativeTo(null);
-	f.setVisible(true);
+public void initUI() {
+	setSize(300, 300);//300*300
+	setVisible(true);//可视
+	setLocationRelativeTo(null);//居中
+	setDefaultCloseOperation(DISPOSE_ON_CLOSE);//关闭
 }
 	
 Color [] color = {Color.black,Color.blue,Color.cyan,Color.green,Color.orange,Color.yellow,
