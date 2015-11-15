@@ -1,0 +1,44 @@
+嵌入式程序一般用AWT
+PC程序一般用Swing
+
+static void initUI(JFrame f,int w,int h){
+	f.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	f.setSize(w,h);
+	f.setLocationRelativeTo(null);
+	f.setVisible(true);
+}
+	
+Color [] color = {Color.black,Color.blue,Color.cyan,Color.green,Color.orange,Color.yellow,
+				  Color.red,Color.lightGray};
+
+关键代码:
+Toolkit tk = Toolkit.getDefaultToolkit();//工具包
+Dimension screenSize = tk.getScreenSize();//当前屏幕的分辨率
+Frame frame = new Frame();
+frame.setLocation(new Point());
+frame.setSize(screenSize);
+frame.setVisible(true);
+
+Thread.sleep(5000);
+tk.beep();//结束前发出蜂鸣
+frame.dispose();
+					  
+文本域换行
+textArea.setSelectedTextColor(Color.red);//选中颜色
+textArea.setLineWrap(true);//激活自动换行功能 
+textArea.setWrapStyleWord(true);//激活断行不断字功能
+文本域滚动条
+new JScrollPane(textArea)
+
+JButton关键代码:
+JButton(String text);//给按钮上面添加字
+Jbutton(String text,Icon icon);//给按钮上面添加字和图片
+addActionListener(ActionListener i);//添加监听
+getActionCommand();//得到动作的命令
+
+JFrame关键代码:
+Image image = ImageIO.read(new File(""));
+setIconImage(image );//设置图标图片,默认的是咖啡的Icon
+setDefaultCloseOperation(dispose_on_close);
+setLocationRelativeTo(null);//居中
+
