@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="F:/Library WorkSpace 1.0/jars/Httpclient_jar/commons-httpclient-3.0.1.jar"/>
 	<classpathentry kind="lib" path="F:/Library WorkSpace 1.0/jars/Httpclient_jar/commons-codec-1.4.jar"/>
 	<classpathentry kind="lib" path="F:/Library WorkSpace 1.0/jars/Httpclient_jar/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Library WorkSpace 1.0/jars/javamail1_4_5/javamail-1.4.5/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
