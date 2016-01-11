@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<!-- 界面容器 -->
+<AnchorPane fx:id="mRoot" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.wing.jfx.drag.MainController">
+  <!-- TODO Add Nodes -->
+  <!-- 子节点 -->
+  <children>
+  	<!-- 文字标签 -->
+    <Label fx:id="m_drag" layoutX="104.0" layoutY="49.0" text="Drag Me">
+    	<!-- 设置字体格式 -->
+      <font>
+      	<!-- 字体大小25 -->
+        <Font size="25.0" fx:id="x1" />
+      </font>
+    </Label>
+    <!-- 文字标签 -->
+    <Label fx:id="m_drop" font="$x1" layoutX="354.0" layoutY="49.0"  text="Drop On Me" />
+    <!-- 文字标签 -->
+    <Label layoutX="29.0" layoutY="146.0" text="Drag a Image to this:">
+    	<!-- 设置字体格式 -->
+      <font>
+      	<!-- 字体大小15 -->
+        <Font size="15.0" fx:id="x2" />
+      </font>
+    </Label>
+    <!-- 图片 -->
+    <ImageView id="m_imageview" fx:id="m_imageView" fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+    <!-- 文字标签 -->
+    <Label font="$x2" layoutX="278.0" layoutY="146.0" text="Drag a TXT to this:" />
+    <!-- 文本域 -->
+    <TextArea id="m_textarea" fx:id="m_textArea" layoutX="329.0" layoutY="195.0" prefWidth="200.0" wrapText="true" />
+    <!-- 文字标签 -->
+  </children>
+</AnchorPane>

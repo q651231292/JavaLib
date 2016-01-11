@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'DragAndDrop.jnlp'
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbed_fxApplication() {
+        dtjava.embed(
+            {
+                id : 'fxApplication',
+                url : 'DragAndDrop.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : 600,
+                height : 400
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed_fxApplication);
+</script>
+
+</head><body>
+  <center>
+  <p style="font-size:22px;">JavaFX Drag And Drop 拖放操作</p>
+  <p style="font-size:15px;">Start with Webstart:<a href='http://www.wjfxgame.com/javafx/draganddrop/DragAndDrop.jnlp' onclick="return launchApplication('DragAndDrop.jnlp');">click</a></p>
+  <p style="font-size:15px;">说明: 这是一个JavaFX拖放的操作，示例中有从一个文本控件Label与另外一个文本控件Label的拖动。还有你可以从本地拖动图片和文本到程序中的ImageView和TextArea中。当然JavaFX还支持从一个JavaFX程序拖到另外一个JavaFX程序。这里不做演示。</p>
+  <br><hr><br>
+  </center>
+  <center>
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+  </center>
+</body></html>
