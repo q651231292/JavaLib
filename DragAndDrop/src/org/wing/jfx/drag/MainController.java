@@ -79,6 +79,7 @@ public class MainController implements Initializable {
 			}
 		});
 
+		//当松开拖拽的对象时
 		m_drop.setOnDragDropped(new EventHandler<DragEvent>() {
 
 			@Override
@@ -88,6 +89,7 @@ public class MainController implements Initializable {
 			}
 		});
 
+		//当已经执行完拖动时
 		m_drag.setOnDragDone(new EventHandler<DragEvent>() {
 
 			@Override
@@ -96,17 +98,18 @@ public class MainController implements Initializable {
 			}
 		});
 		
-		
+		//当拖到图片上方时
 		m_imageView.setOnDragOver(new EventHandler<DragEvent>() {
 
 			@Override
 			public void handle(DragEvent event) {
 				if (event.getGestureSource() != m_imageView) {
+					//设置拖放事件的传输模式//TransferMode.ANY包含所有传输模式的数组
 					event.acceptTransferModes(TransferMode.ANY);
 				}				
 			}
 		});
-		
+		//当松开拖动对象时
 		m_imageView.setOnDragDropped(new EventHandler<DragEvent>() {
 
 			@Override
@@ -122,7 +125,7 @@ public class MainController implements Initializable {
 				}
 			}
 		});
-		
+		//当拖到文本域对象上面时
 		m_textArea.setOnDragOver(new EventHandler<DragEvent>() {
 
 			@Override
@@ -132,7 +135,7 @@ public class MainController implements Initializable {
 				}				
 			}
 		});
-		
+		//当在文本域对象上面松开时
 		m_textArea.setOnDragDropped(new EventHandler<DragEvent>() {//释放拖动
 
 			@Override
